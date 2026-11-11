@@ -1,0 +1,4 @@
+$ cd /cygdrive/e/Socet/images/Kasei_Valles_Trough_2846E_288N/isis/COLOR
+$ ls *COLOR*.raw | gawk '{print "call start_socet -single import_colorHiRISE.exe Kasei_Valles_Trough_2846E_288N "$1" "substr($1,1,15)"_REDmos_hijitreged.sup\r"}' > color_import.bat
+$ chmod +x color_import.bat
+$ ./color_import.bat

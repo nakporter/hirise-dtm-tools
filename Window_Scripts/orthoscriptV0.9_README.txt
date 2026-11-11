@@ -1,0 +1,20 @@
+Hi everyone Max here, this is the new and updated orthoscript so heres the quick start guide
+
+1. Run the script in the terminal or just run it by double clicking the file either work.
+
+2. The script will prompt you for your project name.  You can copy that from the SOCET SET window.
+
+3. The script will prompt you for the number of images you want to generate orthos. IMPORTANT NOTE: the script auto grabs the images ID after you select it 
+later on as well as grabbing the COLOR Sup files from your COLOR directory if its formated correctly
+
+4. The script will prompt you to select the image sup file for orthos generation in a GUI similar to  file explorer and after each one you select 
+it will print the name in the terminal for you to see what images you've selected so far.
+
+5. The script will run through a similar prompt and selection process for the DTM and the Calc Ortho Boundry file for ortho generation.
+
+6. once all the files are selected the script will generate all the appropriate set files as well as a numbered master orthos file in case you run 
+multiple and place them in your batch_dir.
+
+7. From there just double click the master_orthos bat file and let the files generate.
+
+Please email me if you have any notes or questions at maximuscabrera@arizona.edu

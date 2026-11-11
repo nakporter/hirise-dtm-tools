@@ -1,0 +1,23 @@
+# Open an existing 25 cm (or 50 cm) orthophoto settings file in your batch directory, it will end in a .set, then save as orthophoto_template.set
+# In the project data directory, make a list of the color sup files to make into orthophotos
+# For example: in cygwin: ls *COLOR*.sup | sed s/.sup// > colorlist
+#'''Next edit the colorlist to specify what bin each ID is. Using a text editor, put at the end of each image ID a 1 or 2 depending on what the bin size is(1 or 2).'''
+# Here is an example of a colorlist with mixed bin:
+ESP_026905_1660_UNFILTERED_COLOR_BG 1
+ESP_026905_1660_UNFILTERED_COLOR_IR 1
+ESP_026905_1660_UNFILTERED_COLOR_RED 1
+ESP_027182_1660_UNFILTERED_COLOR_BG 2
+ESP_027182_1660_UNFILTERED_COLOR_IR 2
+#'''Make sure that there is nothing else but the 1 or 2 at the end of each line.'''
+# If you have just one bin size than the endings will be all 1's or 2's. 
+# Move the colorlist into the batchdir directory, where the orthophoto template is
+# Bring up a command prompt and cd to the batch directory.
+# Then open up a windows explorer and go into the Local Disk C:\scripts. 
+# Type python then drag and drop ColorOrtho_setFileGen.py into your command prompt and follow the prompts from the script.
+# Should look like this :  ~\batch_dir> python C:\scripts\ColorOrtho_setFileGen_V2.py
+# Note: you can drag and drop the files into the cmd prompt. 
+# The script output and input should look like this:  
+Please enter the bin size of your DTM, '1,2':    1
+Enter the orthophoto template file:     orthophoto_template.set
+Enter the color list:   colorlist
+# Once the script has finished you will have one .bat file called master_color_orthos.bat, just double click on this file and it will generate your color orthos. 
