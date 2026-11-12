@@ -4,3 +4,8 @@ After doing so and also installing SOCET_SET_5.6.0 you will want to add the C:\s
 
 Instructions for doing so can be found in the System Install page of the SOCET_SET_Workstations on the wiki 
 https://hirise.lpl.arizona.edu/wiki/SOCET_SET_Workstations#System_Install
+
+
+## Color Instructions
+
+This is a useful example of how to ingest color products downloaded to your E:\Socet\images\<ProjectName>\isis\COLOR directory and have the SocetSet ingest commands populate in a .bat file that you can double click to ingest the files into your SocetSet project. You would follow up this with the orthoscript.py which has instructions in the hirise-dtm-tools readme
