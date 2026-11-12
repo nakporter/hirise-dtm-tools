@@ -195,6 +195,11 @@ multiple and place them in your batch_dir.
 
 7. From there just double click the master_orthos.bat file and let the files generate.
 
+## OrthoscriptV0.91.py
+This is a helpful script to help with producing ortho products after NGATE has finished and any edits have bene made on the DTM. 
+It requires you to have already ingested your COLOR strips into SocetSet and this script can be moved to your desktop and executed by double clicking.
+You should then be able to follow its prompts to produce the appropiate .set files in your Projects "batch_dir" directory
+Along with these .set files it will also produce a "master_color_0.bat" file that you can execute by double clicking in the batch_dir directory which will execute the orthophoto application from SocetSet in serial sequence for your full RED and COLOR orthophotos.
 
 ### References
 
