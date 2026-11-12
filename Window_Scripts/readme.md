@@ -1,11 +1,9 @@
 These are a collection of useful scripts used in the production process and can all be copied to a "C:\scripts" directory. 
-After doing so and also installing SOCET_SET_5.6.0 you will want to add the C:\scripts directory and the C:\SOCET_ST_5.6.0\bin  directory to your path
+After doing so you will want to add the C:\scripts directory to your path
 
 
-Instructions for doing so can be found in the System Install page of the SOCET_SET_Workstations on the wiki 
-https://hirise.lpl.arizona.edu/wiki/SOCET_SET_Workstations#System_Install
+In the Windows start menu, right-click on Computer > Properties
+- Go to Advanced System Settings > Environment Variables
+- In the list of System variables, locate the variable called "Path" and Edit it
+- Add at the end ";C:\SOCET_SET_5.6.0\bin;C:\scripts;C:\Program Files (x86)\HiRISE\autoTriangulation\;C:\Program Files (x86)\HiRISE\autoTriangulation\gnuplot\bin" (or copy and paste the list of variables to a text editor, edit and then re-copy the updated list back into the Path variable).
 
-
-## Color Instructions
-
-This is a useful example of how to ingest color products downloaded to your E:\Socet\images\<ProjectName>\isis\COLOR directory and have the SocetSet ingest commands populate in a .bat file that you can double click to ingest the files into your SocetSet project. You would follow up this with the orthoscript.py which has instructions in the hirise-dtm-tools readme
