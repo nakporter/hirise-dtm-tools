@@ -29,3 +29,5 @@ Associated BackupREADME.txt
 ## color instruction.txt
 
   An example of the command used to import COLOR from the E:\Socet\images\<ProjectName>\isis\COLOR directory after moving preprocessed COLOR products to the ...\<ProjectName>\isis\COLOR folder
+
+## socet_crash.bat
