@@ -146,7 +146,7 @@ Both scripts were originally written by Annie Howington, formerly of the USGS, a
 
 Do change the path to your scripts folder (specifically the folder containing `hicolor_noproj`) on line 22 of `hicolor4socet`.
 
-Go to the /data/DTM_working/Projects/<Project_name>/ directory. Make a directory called <image_ID>_COLOR in the project directory.
+In your preprocessing directory, make a directory called <image_ID>_COLOR in the project directory.
 `cd /data/DTM_working/Projects/<Project_name>/`
 `mkdir <image_ID>_COLOR`
 `cd <image_ID>_COLOR`
@@ -162,6 +162,17 @@ Run hicolor4socet.pl
 
 ## Import Color to SOCET SET
 
+### Shortcut for importing COLOR products into SocetSet
+
+In powershell you can cd to your image directory where you are storing the COLOR products and run the following command to create an executable batch file to import the images into your SocetSet project. 
+Just make sure to run the command after changing directory to where the color images are and **replace <ProjectName> with your project's name in SocetSet**
+
+`Get-ChildItem *COLOR*.raw | ForEach-Object { $n = $_.Name; 'call start_socet -single import_colorHiRISE.exe <Project name> ' + $n + ' ' + $n.Substring(0,15) + '_REDmos_hijitreged.sup' } | Out-File -FilePath color_import.bat -Encoding ascii`
+
+<sub> This is just making a batch file with the structure below and auto populating for every *COLOR*.raw file in the directory you are</sub>
+<sub> `start_socet -single import_colorHiRISE.exe <COLOR_IMAGE_NAME>.raw <CORRESPONDING_IMAGEID>.sup</sub>
+
+### Manual Instructions for Color import
 Copy the .raw file for each color band over to the SOCET SET workstation.
 
 In a Windows Command prompt, run for example:
